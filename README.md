@@ -26,7 +26,7 @@ Una volta fatto l'accesso l'istanza EC2 di AWS, solo la prima volta eseguire i s
 ```
 sudo yum update
 sudo yum install git
-sudo amazon-liunux-extras install nginx1.12
+sudo amazon-linux-extras install nginx1.12
 ```
 
 
