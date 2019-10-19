@@ -48,5 +48,10 @@ git clone https://github.com/nickname/startbootstrap-something
 sudo cp -r startbootstrap-something/* /usr/share/nginx/html/
 ```
 
-
+# Note
+### Riavvio di nginx
+Per riavviare nginx:
+```
+sudo service nginx restart
+```
 
