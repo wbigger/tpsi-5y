@@ -12,3 +12,6 @@ Poi, in generale ogni volta che ci serve il nostro web server:
 ```
 sudo /usr/sbin/nginx
 ```
+
+Per accedere all'istanza dal browser, andare sulla console di aws, selezionare l'istanza, nel pannello in basso selezionare "Public DNS (IPv4)" e copiare la stringa nella barra del browser.
+
