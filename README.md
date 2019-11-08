@@ -18,6 +18,7 @@ Avviare l'istanza.
 
 Dalla lista delle istanze, selezionare Connect e seguire le istruzioni.
 
+Per accedere all'istanza dal browser, andare sulla console di aws, selezionare l'istanza, nel pannello in basso selezionare "Public DNS (IPv4)" e copiare la stringa nella barra del browser.
 
 
 ### Prima configurazione
@@ -29,6 +30,12 @@ sudo yum install git
 sudo amazon-linux-extras install nginx1.12
 ```
 
+Scaricate il vostro progetto da GitHub e copiatelo nella cartella servita dal server:
+```
+cd
+git clone https://github.com/nickname/startbootstrap-something
+sudo cp -r startbootstrap-something/* /usr/share/nginx/html/
+```
 
 ## Avvii successivi al primo
 Dalla console AWS EC2, selezionare l'istanza e premere il bottone in alto Actions->Instance state->Start.
@@ -39,18 +46,17 @@ Avviare il web server:
 sudo /usr/sbin/nginx
 ```
 
-Per accedere all'istanza dal browser, andare sulla console di aws, selezionare l'istanza, nel pannello in basso selezionare "Public DNS (IPv4)" e copiare la stringa nella barra del browser.
 
-Scaricate il vostro progetto da GitHub e copiatelo nella cartella servita dal server:
+Per aggiornare il progetto già clonato:
 ```
-cd
-git clone https://github.com/nickname/startbootstrap-something
-sudo cp -r startbootstrap-something/* /usr/share/nginx/html/
+cd ~/startbootstrap-something
+git pull
 ```
 
-# Note
+Ricordatevi poi di copiarlo nella cartella servita dal web server, come al primo avvio.
+
 ### Riavvio di nginx
-Per riavviare nginx:
+In caso dovesse servire di riavviare nginx:
 ```
 sudo service nginx restart
 ```
